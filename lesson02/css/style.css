@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+header {
+    border-radius: 15px;
+    background-color: rgb(100, 100, 210);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+section {
+    margin: 15px;
+    background-color: lightgray;
+    width: 80%;
+    border-radius: 15px;
+}
+section h3 {
+    background-color: rgb(100, 100, 210);
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: -15px;
+}
+section a, img, p {
+    padding: 15px;
+}
+.center {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Open Sans", Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+
+img {
+    max-width: 200px;
+}
+
+footer {
+    background-color: rgb(100, 100, 210);
+    border-radius: 15px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+#datediv {
+    color: yellow;
+}
+a {
+    color: rgb(100, 100, 210);
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    section {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    section h3 {
+        margin-top: -15px;
+    }
+    #office {
+        grid-column: 1/3;
+    }
+    #officeimg {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+    }
+    section {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #officeimg {
+        max-width: 300px;
+    }
+    img {
+        max-width: 300px;
+    }
+}
