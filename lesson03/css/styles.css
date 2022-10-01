@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+}
+p,div,a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+nav a div {
+    background-color: #006064;
+    text-align: center;
+}
+nav div:hover {
+    background-color: #003539;
+    text-align: center;
+}
+nav a div h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    padding: 25px;
+    margin: -5px;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+header img {
+    max-width: 70%;
+}
+header h1 {
+    grid-column: 2/3;
+}
+main h2 {
+    text-align: center;
+}
+.info {
+    padding: 25px;
+    margin-top: -25px;
+}
+.smaller {
+    max-width: 400px;
+}
+.center {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+}
+.opensans {
+    font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+}
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.forty {
+    font-size: 40pt;
+}
+.thirty {
+    font-size: 30pt;
+}
+.twentyfive {
+    font-size: 25pt;
+}
+.twenty {
+    font-size: 20pt;
+}
+.thirteen {
+    font-size: 13pt;
+}
+.whitetext {
+    color: white;
+}
+.primary {
+    background-color: #006064;
+}
+.light {
+    background-color: #428e92;
+}
+.green {
+    background-color: #94af76;
+}
+.dark {
+    color: #00363a;
+}
+table,th,td {
+    border: 1px solid #428e92;
+    width: 80%;
+    margin: 0 auto;
+}
+footer h2 {
+    font-size: 13pt;
+}
+
+@media screen and (min-width: 60em){
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
