@@ -85,13 +85,52 @@ main {
     grid-template-columns: 100%;
     margin-top: -25px;
 }
-main div {
-    background: whitesmoke;
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     margin: 10px;
-    padding-top: 10px;
-    padding-bottom: 100px;
-    border: solid 1px black;
     border-radius: 5px;
+}
+#hero img {
+    grid-row: 1/7;
+    grid-column: 1/13;
+    z-index: -1;
+    width: 100%;
+    border-radius: 5px;
+}
+#hero h3 {
+    grid-column: 2/10;
+    grid-row: 1/3;
+    font-size: 20pt;
+    font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+}
+#hero button {
+    grid-column: 8/12;
+    grid-row: 4/5;
+}
+.join {
+    background-color: #006064;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+    box-shadow: 5px 5px 5px #94af76;
+}
+
+/* main div {
+    
+} */
+#spotlight, #s1, #s2, #s3, #event, #news, #weather, #join {
+    background: #006064;
+    margin: 10px;
+    /* border: solid 1px black; */
+    border-radius: 5px;
+    color: white;
 }
 #spotlight {
     display: grid;
