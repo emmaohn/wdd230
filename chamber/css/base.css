@@ -111,7 +111,7 @@ main {
     grid-row: 4/5;
 }
 .join {
-    background-color: #006064;
+    background-color: #00363a;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -128,9 +128,11 @@ main {
 #spotlight, #s1, #s2, #s3, #event, #news, #weather, #join {
     background: #006064;
     margin: 10px;
+    padding: 20px 0 0px;
     /* border: solid 1px black; */
     border-radius: 5px;
     color: white;
+    text-align: center;
 }
 #spotlight {
     display: grid;
@@ -139,6 +141,9 @@ main {
 }
 #s3, #join {
     display: none;
+}
+#join button {
+    margin-top: 10px;
 }
 
 footer img {
