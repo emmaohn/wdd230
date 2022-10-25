@@ -1,3 +1,7 @@
+// TO DO
+// Three images of different sizes that are respnsive (webp)
+// wind chill in the span
+
 toggleNav = () => {
     document.getElementById('header__nav').classList.toggle('hidden');
 }

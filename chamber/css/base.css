@@ -5,6 +5,10 @@
 /* font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif; */
 /* font-family: Georgia, 'Times New Roman', Times, serif; */
 
+/* TO DO */
+/* hover on <a> elements */
+/* three different images with different sizes (webp) */
+
 a:hover {
     font-weight: 2000;
 }

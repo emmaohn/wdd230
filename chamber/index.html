@@ -33,7 +33,11 @@
     </header>
     <main>
         <div id="hero">
-            <img src="images/hero-img-base.jpg" alt="Pleasant Lake">
+            <picture>
+                <source srcset="images/orglrg.webp" media="(min-width: 500px) and (max-width: 799px)">
+                <source srcset="images/orgmed.webp" media="(min-width: 800px)">
+                <img src="images/orgsmall.webp" alt="Pleasant Lake">
+            </picture>
             <h3>Welcome to Pleasant Point</h3>
             <button class="join">Join the Chamber</button>
         </div>
