@@ -6,11 +6,10 @@
 /* font-family: Georgia, 'Times New Roman', Times, serif; */
 
 /* TO DO */
-/* hover on <a> elements */
 /* three different images with different sizes (webp) */
 
 a:hover {
-    font-weight: 2000;
+    font-weight: bold;
 }
 
 #meeting-banner {
@@ -88,9 +87,7 @@ li{
     /* border:solid 1px green; */
     display:inline-block;
 }
-li a:hover {
-    font-size: 20pt;
-}
+
 li a{
     /* border:solid 1px red; */
     padding: 10px;
