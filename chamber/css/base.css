@@ -110,7 +110,7 @@ main {
     margin: 10px;
     border-radius: 5px;
 }
-#hero img {
+#hero picture {
     grid-row: 1/7;
     grid-column: 1/13;
     z-index: -1;
@@ -233,7 +233,7 @@ footer div p {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 60em) {
     /* .hidden {
         display: block;
     } */

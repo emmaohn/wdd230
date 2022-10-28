@@ -18,9 +18,9 @@ document.getElementById('todays-date').textContent = `${days[today.getDay()]}, $
 const lastmodified = new Date(document.lastModified);
 document.getElementById('lastModified').textContent = document.lastModified;
 
-let day = 1;
+// let day = 1;
 // today.getDay()
-if (day == 1 || today.getDay() == 2) {
+if (today.getDay() == 1 || today.getDay() == 2) {
     document.getElementById('meeting-banner').style.display = 'block';
 } else {
     document.getElementById('meeting-banner').style.display = 'none';
