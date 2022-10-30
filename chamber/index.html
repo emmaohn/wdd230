@@ -7,6 +7,7 @@
     <meta name="description" content="Chamber of Commerce Site for Pleasant Point">
     <title>Pleasant Point Chamber of Commerce</title>
     <script defer src="js/main.js"></script>
+    <script defer src="js/windchill.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -24,7 +25,7 @@
         </div>
         <nav id="header__nav" class="hidden">
             <ul>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -35,8 +36,11 @@
         <div id="hero">
             <picture>
                 <source srcset="images/orglrg.webp" media="(min-width: 60em)">
-                <source srcset="images/orgmed.webp" media="(min-width: 40em) and (max-width: 59em)">
+                <!-- 460 -->
+                <source srcset="images/orgmed.webp" media="(min-width: 40em) and (max-width: 60em)"> 
+                <!-- 620 -->
                 <img src="images/orgsmall.webp" alt="Pleasant Lake">
+                <!-- 250 -->
             </picture>
             <h3>Welcome to Pleasant Point</h3>
             <button class="join">Join the Chamber</button>
@@ -51,17 +55,18 @@
         <div id="weather">
             <h3>Weather</h3>
             <i class="fa-regular fa-snowflake"></i>
-            <span id="windChill"></span>
             <span>Partly Cloudy</span>
             <div>
-                <span>Wind Speed: 2.5 km/h</span>
-                <span>Wind Chill: N/A</span>
+                Wind Speed:<span id="windspeed"></span> <br>
+                Wind Chill:<span id="chill"></span>
             </div>
         </div>
         <div id="news">
             <h3>News</h3>
             <p>
-                YOUR MOTHER.
+                Registration week is coming up soon. 
+                Learn how you can register to vote so 
+                you can have your voice heard.
             </p>
         </div>
         <div id="spotlight">

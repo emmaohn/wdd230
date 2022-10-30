@@ -6,7 +6,7 @@
 /* font-family: Georgia, 'Times New Roman', Times, serif; */
 
 /* TO DO */
-/* three different images with different sizes (webp) */
+/* figure out the favicon thing */
 
 a:hover {
     font-weight: bold;
@@ -114,8 +114,10 @@ main {
     grid-row: 1/7;
     grid-column: 1/13;
     z-index: -1;
-    width: 100%;
     border-radius: 5px;
+}
+#hero picture img {
+    width: 100%;
 }
 #hero h3 {
     grid-column: 2/10;
@@ -183,6 +185,19 @@ footer div p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13pt;
     color: white;
+}
+
+/* DISCOVER PAGE */
+.discoverimg img {
+    display: block;
+}
+#discover-grid p {
+    color: black;
+}
+
+#discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 40em) {

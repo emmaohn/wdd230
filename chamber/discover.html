@@ -4,10 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Pleasant point discover page">
     <title>Pleasant Point Discover Page</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/lazy.js"></script>
+    <script defer src="js/discover.js"></script>
 </head>
 <body>
-    
+    <div id="meeting-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <header id="header__flex">
+        <div id="header-div">
+            <a href="index.html"><img class="small-logo" src="images/pptreeslight.png" alt="pleasant point logo"></a>
+            <h1>Pleasant Point<br>Chamber of Commerce</h1>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <span id="todays-date"></span>
+            <button id="ham" class="ham"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <nav id="header__nav" class="hidden">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Discovery Page</h1>
+        <span id="lastvisited"></span>
+        <div id="discover-grid">
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/one.jpg" alt="placeholder">
+            </picture>
+            <p>
+                With the boost in tourism to the area, our taxi fleet
+                has about doubled in the past two years!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/two.jpg" alt="placeholder">
+            </picture>
+            <p>
+                Skyline tours are available at the Pleasant Point Plaza
+                in Porter Square.
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/three.jpg" alt="placeholder">
+            </picture>
+            <p>
+                The weather in Pleasant Point is typically misty
+                and a little drizzly with a rain level of 15 feet a year,
+                so bring an umbrella!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/four.jpg" alt="placeholder">
+            </picture>
+            <p>
+                With our majority Chinese immigrant population, our 
+                Chinese sector is a great place to come enjoy the 
+                culture of our little town!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/five.jpg" alt="placeholder">
+            </picture>
+            <p>
+                The night life in Pleasant Point is always thriving,
+                with many good places to eat opening late and staying 
+                open even later, downtown Pleasant is the place to be
+                for the night life scene!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/six.jpg" alt="placeholder">
+            </picture>
+            <p>
+                Tourism has greatly affected the amount of public 
+                transportation that has begun to pop up in downtown pleasant, 
+                as well as the amount of hotels that are available for tourists!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/seven.jpg" alt="placeholder">
+            </picture>
+            <p>
+                The ferry ride to Isle Pleasant is one of our greatest attractions!
+                The Isle features a museum displaying Pleasant Point's history, and 
+                the wives tales of our town.
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/eight.jpg" alt="placeholder">
+            </picture>
+            <p>
+                Our tourism ratings have increased reapidly these last couple years,
+                being rated #2 by several news sources! Our hospitality extends beyond
+                our pleasant attitudes! Check out our five star rated hotels, restaurants
+                and tourist attractions!
+            </p>
+            <picture class="discoverimg">
+                <img src="https://via.placeholder.com/300x400" data-src="./images/discover/nine.jpg" alt="placeholder">
+            </picture>
+            <p>
+                Helicopter tours are available at the Porter Plaza. 
+                Tours last for about 30 minutes to an hour, and depart
+                and return to the landing pad on top of the Porter Plaza
+                Bank.
+            </p>
+        </div>        
+    </main>    
+    <footer>
+        <div id="footer-flex">
+            <img class="small-logo" src="images/pptreeslight.png" alt="Pleasant Point Chamber of Commerce Logo">
+            <p id="address">
+                <b>Pleasant Point Chamber of Commerce</b><br>
+                600 East lakeshore Dr <br>
+                Houghton, MI 12333 <br>
+            </p>
+            <p id="quickref">
+                info@ppcoc.org <br>
+                (600) 650-6780 <br>
+                <a href="#">Location Map</a>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>&copy;<span id="year"></span> Pleasant Point Chamber</p>
+            <p><b>Emma Johnson</b></p>
+            <p>WDD 230 project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
