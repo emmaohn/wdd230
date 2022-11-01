@@ -8,6 +8,15 @@
 /* TO DO */
 /* figure out the favicon thing */
 
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    /* font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 a:hover {
     font-weight: bold;
 }
@@ -191,13 +200,32 @@ footer div p {
 .discoverimg img {
     display: block;
 }
-#discover-grid p {
-    color: black;
-}
 
+#discover-grid p {
+    /* font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif; */
+    color: #000000;
+    margin-bottom: 25px;
+
+}
+#discover-grid picture img {
+    width: 80%;
+    margin: 0 auto;
+    max-height: 300px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
 #discover-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#discovermain {
+    margin: 50px;
+    margin-top: -55px;
+}
+#discovermain h1 {
+    text-align: center;
 }
 
 @media screen and (min-width: 40em) {
@@ -245,6 +273,11 @@ footer div p {
     #footer-flex {
         display: flex;
         justify-content: space-between;
+    }
+
+    /* DISCOVER */
+    #discover-grid picture img:hover {
+        box-shadow: 5px 5px 5px #006064;
     }
 }
 
