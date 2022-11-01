@@ -208,7 +208,7 @@ footer div p {
 
 }
 #discover-grid picture img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     max-height: 300px;
     border-radius: 15px;
@@ -337,4 +337,8 @@ footer div p {
             grid-column: 1/2;
             grid-row: 3/4;
         }
+    #discovermain {
+        margin: 50px;
+        margin-top: -20px;
+    }
 }
