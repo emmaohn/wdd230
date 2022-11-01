@@ -1,0 +1,35 @@
+
+table {
+    font-family: Ubuntu, sans-serif;
+    font-size: 13pt;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+caption, tfoot {
+    background-color:rgb(146, 176, 94);
+}
+thead {
+    background-color: cornflowerblue;
+}
+tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+tbody tr:nth-child(odd) {
+    background-color: cornsilk;
+}
+td, th, caption {
+    padding: 10px;
+}
+table, caption, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blue {
+    background-color: rgb(210, 221, 240);
+}
+
+.darkblue {
+    background-color: rgb(162, 192, 246);
+}
