@@ -87,12 +87,12 @@ i {
     display: none;
 }
 
-ul{
+nav ul{
     /* border:solid 1px black; */
     padding: 0;
     margin: 0px;
 }
-li{
+nav ul li{
     /* border:solid 1px green; */
     display:inline-block;
 }
@@ -342,3 +342,39 @@ footer div p {
         margin-top: -20px;
     }
 }
+
+/* JOIN */
+
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+}
+
+label.myinput input, label.myinput textarea {
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+
+label.myradio {
+    display: block;
+}
+
+label.myradio input {
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+
+.mysubmit {
+    background-color: #00363a;
+    color: white;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+/* label.myinput input:required {
+
+} */
