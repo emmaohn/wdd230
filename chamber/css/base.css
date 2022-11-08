@@ -106,7 +106,7 @@ li a{
     font-size: 13pt;
 }
 
-main {
+#index-main {
     display: grid;
     grid-template-columns: 100%;
     margin-top: -25px;
@@ -228,11 +228,22 @@ footer div p {
     text-align: center;
 }
 
+#thank-you {
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#join-main {
+    margin: 20px;
+}
+
 @media screen and (min-width: 40em) {
-    main {
+    #index-main {
         grid-template-columns: 60% 40%;
     }
-    main div {
+    #index-main div {
         grid-column: 1/3;
     }
     #hero {
@@ -295,7 +306,7 @@ footer div p {
         text-align: center;
         padding-top: 25px;
     }
-    main {
+    #index-main {
         margin-top: -10px;
         grid-template-columns: 1fr 2fr 1fr;
     }
