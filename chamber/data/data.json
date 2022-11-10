@@ -5,84 +5,84 @@
         "address": "737 Temple Court, Malo, Hawaii, 4934",
         "phone": "+1 (905) 550-3361",
         "website": "https://www.comtrak.com/",
-        "img": "img/directory/isoplex.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Sonique",
         "address": "247 Forrest Street, Byrnedale, South Carolina, 2208",
         "phone": "+1 (858) 528-2230",
         "website": "https://www.bovis.com/",
-        "img": "img/directory/bulljuice.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Gluid",
         "address": "851 Guernsey Street, Hayes, New Hampshire, 5132",
         "phone": "+1 (870) 421-3491",
         "website": "https://www.rameon.com/",
-        "img": "img/directory/zosis.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Silodyne",
         "address": "421 Fairview Place, Foscoe, Puerto Rico, 4715",
         "phone": "+1 (803) 452-2785",
         "website": "https://www.ecstasia.com/",
-        "img": "img/directory/slumberia.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Pulze",
         "address": "633 Cass Place, Vienna, Palau, 3868",
         "phone": "+1 (931) 447-3051",
         "website": "https://www.zizzle.com/",
-        "img": "img/directory/utara.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Biolive",
         "address": "632 Harrison Avenue, Kylertown, Kansas, 3305",
         "phone": "+1 (925) 429-2876",
         "website": "https://www.hopeli.com/",
-        "img": "img/directory/prosure.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Isologics",
         "address": "460 Remsen Street, Selma, North Dakota, 8055",
         "phone": "+1 (810) 585-2197",
         "website": "https://www.tribalog.com/",
-        "img": "img/directory/earthplex.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Kiosk",
         "address": "770 Orient Avenue, Kingstowne, Nebraska, 4355",
         "phone": "+1 (929) 558-2081",
         "website": "https://www.voipa.com/",
-        "img": "img/directory/norali.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Architax",
         "address": "673 Kings Place, Sims, Mississippi, 6475",
         "phone": "+1 (801) 462-2365",
         "website": "https://www.gallaxia.com/",
-        "img": "img/directory/dentrex.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Comtours",
         "address": "716 Ludlam Place, Ellerslie, North Carolina, 902",
         "phone": "+1 (879) 446-2617",
         "website": "https://www.rockyard.com/",
-        "img": "img/directory/undertap.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Darwinium",
         "address": "962 Langham Street, Mammoth, Arkansas, 7006",
         "phone": "+1 (958) 422-3060",
         "website": "https://www.zillar.com/",
-        "img": "img/directory/turnling.jpg"
+        "img": "images/placeholder-logo.webp"
     },
     {
         "name": "Insuron",
         "address": "517 Putnam Avenue, Robinette, Louisiana, 6247",
         "phone": "+1 (964) 427-2355",
         "website": "https://www.zentix.com/",
-        "img": "img/directory/lumbrex.jpg"
+        "img": "images/placeholder-logo.webp"
     }
 ]
 }

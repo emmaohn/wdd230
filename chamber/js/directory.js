@@ -1,6 +1,6 @@
 
-let cardselector = document.querySelector('#cardselector');
-let listselector = document.querySelector('#listselector');
+let cardselector = document.querySelector('#cardselect');
+let listselector = document.querySelector('#listselect');
 let cardview = document.querySelector('#cardview');
 let listview = document.querySelector('#listview');
 
@@ -9,7 +9,7 @@ cardselector.addEventListener('click', () => {
     listview.style.display = 'none';
 })
 
-const requestURL = '';
+const requestURL = 'https://emmaohn.github.io/wdd230/chamber/data/data.json';
 
 fetch(requestURL)
     // promise object
@@ -18,9 +18,9 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const bizlist = jsonObject['prophets'];
+        const bizlist = jsonObject['businesses'];
         bizlist.forEach(displayCards);
-        bizlist.forEach(displayList);
+        // bizlist.forEach(displayList);
     });
 
 function displayCards(card) {
