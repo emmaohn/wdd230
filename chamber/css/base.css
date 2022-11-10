@@ -239,6 +239,12 @@ footer div p {
     margin: 20px;
 }
 
+/* DIRECTOTRY */
+
+#gridselect, #listselect {
+    color: black;
+}
+
 @media screen and (min-width: 40em) {
     #index-main {
         grid-template-columns: 60% 40%;
