@@ -7,7 +7,11 @@ let listview = document.querySelector('#listview');
 cardselector.addEventListener('click', () => {
     cardview.style.display = 'grid';
     listview.style.display = 'none';
-})
+});
+cardselector.addEventListener('click', () => {
+    cardview.style.display = 'none';
+    listview.style.display = 'block';
+});
 
 const requestURL = 'https://emmaohn.github.io/wdd230/chamber/data/data.json';
 

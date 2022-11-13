@@ -244,6 +244,20 @@ footer div p {
 #gridselect, #listselect {
     color: black;
 }
+#cardview {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1);
+}
+#cardview div img {
+    width: 50%;
+}
+#cardview div p, a {
+    color: black;
+}
+#cardview div {
+    margin: 20px;
+    box-shadow: #7e7e7e 5px 5px 5px;
+}
 
 @media screen and (min-width: 40em) {
     #index-main {
@@ -295,6 +309,12 @@ footer div p {
     /* DISCOVER */
     #discover-grid picture img:hover {
         box-shadow: 5px 5px 5px #006064;
+    }
+
+    /* DIRECTORY */
+    #cardview {
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
     }
 }
 
@@ -357,6 +377,16 @@ footer div p {
     #discovermain {
         margin: 50px;
         margin-top: -20px;
+    }
+    #cardview {
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
+    }
+}
+@media screen and (min-width: 60em) {
+    #cardview {
+        display: grid;
+        grid-template-columns: repeat(1fr, 4);
     }
 }
 
