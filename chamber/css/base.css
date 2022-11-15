@@ -246,9 +246,10 @@ footer div p {
 }
 #cardview {
     display: grid;
-    grid-template-columns: repeat(1fr, 1);
+    grid-template-columns: 1fr;
 }
 #cardview div img {
+    margin: 0 auto;
     width: 50%;
 }
 #cardview div p, a {
@@ -314,7 +315,7 @@ footer div p {
     /* DIRECTORY */
     #cardview {
         display: grid;
-        grid-template-columns: repeat(1fr, 3);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -386,7 +387,7 @@ footer div p {
 @media screen and (min-width: 60em) {
     #cardview {
         display: grid;
-        grid-template-columns: repeat(1fr, 4);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
