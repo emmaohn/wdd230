@@ -8,6 +8,7 @@
     <title>Pleasant Point Chamber of Commerce</title>
     <script defer src="js/main.js"></script>
     <script defer src="js/windchill.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -18,17 +19,17 @@
         <div id="header-div">
             <a href="index.html"><img class="small-logo" src="images/pptreeslight.png" alt="pleasant point logo"></a>
             <h1>Pleasant Point<br>Chamber of Commerce</h1>
-            <a aria-label="facebook logo" href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a aria-label="linkedin logo" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a aria-label="facebook logo" href="#"><i class="fa-brands fa-facebook social"></i></a>
+            <a aria-label="linkedin logo" href="#"><i class="fa-brands fa-linkedin social"></i></a>
             <span id="todays-date"></span>
             <button id="ham" class="ham"><i class="fa-solid fa-bars"></i></button>
         </div>
         <nav id="header__nav" class="hidden">
             <ul>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a title="discover" href="discover.html">Discover</a></li>
+                <li><a title="directory" href="directory.html">Directory</a></li>
+                <li><a title="join" href="join.html">Join</a></li>
+                <li><a title="contact" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -54,12 +55,15 @@
         </div>
         <div id="weather">
             <h3>Weather</h3>
-            <i class="fa-regular fa-snowflake"></i>
-            <span>Partly Cloudy</span>
+            <span id="icon-src"></span>
+            <!-- <i class="fa-regular fa-snowflake"></i> -->
+            <span><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure></span>
             <div>
-                Wind Speed:<span id="windspeed"></span> <br>
-                Wind Chill:<span id="chill"></span>
+                Wind Speed: <span id="windspeed"></span> mph<br>
+                Wind Chill: <span id="chill"></span>
             </div>
+            <p>Temperature: <span id="current-temp"></span> &deg;F</p>
+            <figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>
         </div>
         <div id="news">
             <h3>News</h3>

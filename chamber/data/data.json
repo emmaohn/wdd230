@@ -1,88 +1,88 @@
 { 
     "businesses" : [
     {
-        "name": "Eventix",
+        "name": "Steve's Hickory Hut",
         "address": "737 Temple Court, Malo, Hawaii, 4934",
         "phone": "+1 (905) 550-3361",
-        "website": "https://www.comtrak.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.steveshickoryhut.com/",
+        "img": "images/logos/logo1.avif"
     },
     {
         "name": "Sonique",
         "address": "247 Forrest Street, Byrnedale, South Carolina, 2208",
         "phone": "+1 (858) 528-2230",
-        "website": "https://www.bovis.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.risottiamo.com/",
+        "img": "images/logos/logo2.avif"
     },
     {
         "name": "Gluid",
         "address": "851 Guernsey Street, Hayes, New Hampshire, 5132",
         "phone": "+1 (870) 421-3491",
-        "website": "https://www.rameon.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.vinewave.com/",
+        "img": "images/logos/logo3.avif"
     },
     {
         "name": "Silodyne",
         "address": "421 Fairview Place, Foscoe, Puerto Rico, 4715",
         "phone": "+1 (803) 452-2785",
-        "website": "https://www.ecstasia.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.simiplysolope.com/",
+        "img": "images/logos/logo4.avif"
     },
     {
         "name": "Pulze",
         "address": "633 Cass Place, Vienna, Palau, 3868",
         "phone": "+1 (931) 447-3051",
-        "website": "https://www.zizzle.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.lesarterres.com/",
+        "img": "images/logos/logo5.avif"
     },
     {
         "name": "Biolive",
         "address": "632 Harrison Avenue, Kylertown, Kansas, 3305",
         "phone": "+1 (925) 429-2876",
         "website": "https://www.hopeli.com/",
-        "img": "images/placeholder-logo.webp"
+        "img": "images/logos/logo6.avif"
     },
     {
         "name": "Isologics",
         "address": "460 Remsen Street, Selma, North Dakota, 8055",
         "phone": "+1 (810) 585-2197",
-        "website": "https://www.tribalog.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.marylandpowerclean.com/",
+        "img": "images/logos/logo7.avif"
     },
     {
         "name": "Kiosk",
         "address": "770 Orient Avenue, Kingstowne, Nebraska, 4355",
         "phone": "+1 (929) 558-2081",
-        "website": "https://www.voipa.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.babybluewhale.com/",
+        "img": "images/logos/logo8.avif"
     },
     {
         "name": "Architax",
         "address": "673 Kings Place, Sims, Mississippi, 6475",
         "phone": "+1 (801) 462-2365",
-        "website": "https://www.gallaxia.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.homebrewernation.com/",
+        "img": "images/logos/logo9.avif"
     },
     {
         "name": "Comtours",
         "address": "716 Ludlam Place, Ellerslie, North Carolina, 902",
         "phone": "+1 (879) 446-2617",
-        "website": "https://www.rockyard.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.confluencecoffeeco.com/",
+        "img": "images/logos/logo10.avif"
     },
     {
         "name": "Darwinium",
         "address": "962 Langham Street, Mammoth, Arkansas, 7006",
         "phone": "+1 (958) 422-3060",
-        "website": "https://www.zillar.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.milkandhoney.com/",
+        "img": "images/logos/logo11.avif"
     },
     {
         "name": "Insuron",
         "address": "517 Putnam Avenue, Robinette, Louisiana, 6247",
         "phone": "+1 (964) 427-2355",
-        "website": "https://www.zentix.com/",
-        "img": "images/placeholder-logo.webp"
+        "website": "https://www.silocoffeeco.com/",
+        "img": "images/logos/logo12.avif"
     }
 ]
 }

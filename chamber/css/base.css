@@ -17,10 +17,6 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-a:hover {
-    font-weight: bold;
-}
-
 #meeting-banner {
     background-color: #f8ffd7;
     text-align: center;
@@ -40,6 +36,10 @@ header h1 {
     font-size: 15pt;
 }
 
+.social {
+    margin: 8px;
+}
+
 #todays-date {
     background-color: #00363a;
     color: white;
@@ -55,16 +55,6 @@ header h1 {
     background-color: #006064;
     grid-row: 1/2;
     color: white;
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-    background-color: #c5e1a5;
-    grid-row: 2/3;
-    height: 50px;
-    align-items: center;
 }
 
 i {
@@ -87,29 +77,53 @@ i {
     display: none;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c5e1a5;
+    grid-row: 2/3;
+    height: 50px;
+    align-items: center;
+}
 nav ul{
-    /* border:solid 1px black; */
     padding: 0;
     margin: 0px;
 }
 nav ul li{
-    /* border:solid 1px green; */
     display:inline-block;
+    font-size: 0;
 }
-
-li a{
-    /* border:solid 1px red; */
+nav ul li a{
     padding: 10px;
     text-decoration: none;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13pt;
+    display:inline-block;
+    text-align:center;
+    /* font: normal 16px Arial; */
+    text-transform: uppercase;
 }
+nav ul li a:hover {
+    font-weight:bold;
+}
+nav ul li a::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 
 #index-main {
     display: grid;
     grid-template-columns: 100%;
     margin-top: -25px;
+}
+#index-main div a {
+    color: white;
 }
 
 #hero {
@@ -150,9 +164,6 @@ li a{
     box-shadow: 5px 5px 5px #94af76;
 }
 
-/* main div {
-    
-} */
 #spotlight, #s1, #s2, #s3, #event, #news, #weather, #join {
     background: #006064;
     margin: 10px;
@@ -190,6 +201,9 @@ footer div h1, p, a {
     color: white;
     text-align: center;
 }
+footer div a {
+    color: white;
+}
 footer div p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13pt;
@@ -210,7 +224,8 @@ footer div p {
 #discover-grid picture img {
     width: 100%;
     margin: 0 auto;
-    max-height: 300px;
+    max-height: 350px;
+    max-width: 250px;
     border-radius: 15px;
     margin-bottom: 25px;
 }
@@ -218,14 +233,94 @@ footer div p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin-top: 30px;
 }
 
 #discovermain {
     margin: 50px;
     margin-top: -55px;
 }
-#discovermain h1 {
+#discover-header {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* JOIN */
+
+#join-main {
+    margin: 20px;
+    margin-top: -50px;
+}
+
+#join-form label {
+    font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+}
+
+label.myinput input, label.myinput textarea {
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+
+label.myradio {
+    display: block;
+}
+
+label.myradio input {
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+
+.mysubmit {
+    background-color: #006064;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+}
+
+.myradio {
+    background-color: #006064;
+    border: 3px solid #006064;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    margin: 15px;
+    text-align: center;
+    line-height: 100px;
+}
+.myradio:hover {
+    border: 3px solid #c5e1a5;
+}
+input:checked + label {
+    background-color: #c5e1a5;
+    border: 3px solid #c5e1a5;
+    color: black;
+}
+.memberradio {
+    opacity: 0;
+    position: fixed;
+}
+
+#bizdescription {
+    display: block;
+}
+
+#memberships h3, #memberships h4, #memberships ul li{
+    color: black;
+}
+#memberships ul li {
+    list-style: circle;
 }
 
 #thank-you {
@@ -235,21 +330,24 @@ footer div p {
     margin-bottom: 150px;
 }
 
-#join-main {
-    margin: 20px;
-}
-
 /* DIRECTOTRY */
 
+#biz-main {
+    margin-top: -35px;
+}
+
+#bizheader {
+    text-align: center;
+}
 #gridselect, #listselect {
     color: black;
 }
+
 #cardview {
     display: grid;
     grid-template-columns: 1fr;
 }
 #cardview div img {
-    margin: 0 auto;
     width: 50%;
 }
 #cardview div p, a {
@@ -257,15 +355,33 @@ footer div p {
 }
 #cardview div {
     margin: 20px;
-    box-shadow: #7e7e7e 5px 5px 5px;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    box-shadow: #7e7e7e 5px 5px 10px;
+    text-align: center;
+}
+#cardselect, #listselect {
+    color: black;
+}
+
+#listview {
+    width: 100%;
+    border-collapse: collapse;
+}
+#listview tr td {
+    border: 3px solid white;
+    padding: .5em;
+}
+#listview tr:nth-child(odd) {
+    background: #f8ffd7;
+}
+#listview tr td a:hover {
+    font-weight: none;
 }
 
 @media screen and (min-width: 40em) {
     #index-main {
         grid-template-columns: 60% 40%;
-    }
-    #index-main div {
-        grid-column: 1/3;
     }
     #hero {
         grid-column: 1/3;
@@ -305,6 +421,14 @@ footer div p {
     #footer-flex {
         display: flex;
         justify-content: space-between;
+    }
+    footer img {
+        margin: 0px;
+    }
+
+    /* JOIN */
+    #join-main {
+        margin-top: -40px;
     }
 
     /* DISCOVER */
@@ -375,54 +499,23 @@ footer div p {
             grid-column: 1/2;
             grid-row: 3/4;
         }
+    /* DISCOVER */
     #discovermain {
         margin: 50px;
         margin-top: -20px;
+    }
+
+    /* JOIN */
+    #join-main {
+        margin-top: -20px;
+    }
+
+    /* DIRECTOTRY */
+    #biz-main {
+        margin-top: -25px;
     }
     #cardview {
         display: grid;
         grid-template-columns: repeat(1fr, 3);
     }
 }
-@media screen and (min-width: 60em) {
-    #cardview {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* JOIN */
-
-label.myinput {
-    display: block;
-    padding-top: 1rem;
-}
-
-label.myinput input, label.myinput textarea {
-    display: block;
-    font-size: 1.2rem;
-    padding: .5rem;
-    width: 20rem;
-    max-width: 20rem;
-}
-
-label.myradio {
-    display: block;
-}
-
-label.myradio input {
-    margin-right: .5rem;
-    font-size: 1.3rem;
-}
-
-.mysubmit {
-    background-color: #00363a;
-    color: white;
-    margin: 1rem 0 0 0;
-    padding: .5rem;
-    font-size: 1.5rem;
-}
-
-/* label.myinput input:required {
-
-} */

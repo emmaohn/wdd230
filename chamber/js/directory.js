@@ -8,7 +8,7 @@ cardselector.addEventListener('click', () => {
     cardview.style.display = 'grid';
     listview.style.display = 'none';
 });
-cardselector.addEventListener('click', () => {
+listselector.addEventListener('click', () => {
     cardview.style.display = 'none';
     listview.style.display = 'block';
 });
@@ -21,10 +21,10 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        console.table(jsonObject); // temporary checking for valid response and data parsing
         const bizlist = jsonObject['businesses'];
         bizlist.forEach(displayCards);
-        // bizlist.forEach(displayList);
+        bizlist.forEach(displayList);
     });
 
 function displayCards(card) {
@@ -38,6 +38,13 @@ function displayCards(card) {
     cardview.appendChild(cardelt);
 }
 
-// function displayList() {
-    
-// }
+function displayList(card) {
+    let listview = document.querySelector('#listview');
+    let listelt = document.createElement('tr');
+    // debugger 
+    listelt.innerHTML = 
+        `<td>${card.address}</td>
+        <td>${card.phone}</td>
+        <td><a href="${card.website}">${card.website}</a></td>`;
+    listview.appendChild(listelt);
+}

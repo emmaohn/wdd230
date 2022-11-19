@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pleasant Point Join Page</title>
     <meta name="description" content="Join the Pleasant Point Chamber of Commerce and see how we can help YOUR business">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -34,7 +35,7 @@
     </header>
     <main id="join-main">
         <section>
-            <form action="thankyou.html" method="GET">
+            <form id="join-form" action="thankyou.html" method="GET">
                 <!-- {7, } at LEAST seven {7,9} between 7 and 9 -->
 
                 <label class="myinput">First Name *<input type="text" name="fname" required></label>
@@ -43,20 +44,32 @@
                 <label class="myinput">Email *<input type="email" name="email" required></label>
                 <label class="myinput">Cell Phone *<input type="tel" name="cellphone" required></label>
                 <label class="myinput">Business Name<input type="text" name="bizname" required></label>
+
                 <h3>Membership level</h3>
-                <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
-                <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
-                <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
-                <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
-                <label>Business Description<textarea name="description"cols="40" rows="5"></textarea></label>
+
+                <input class="memberradio" id="nonprofit" type="radio" name="level" value="nonprofit">
+                <label for="nonprofit" class="myradio">Non-Profit</label>
+
+                <input class="memberradio" id="bronze" type="radio" name="level" value="bronze">
+                <label for="bronze" class="myradio">Bronze</label>
+
+                <input class="memberradio" id="silver" type="radio" name="level" value="silver">
+                <label for="silver" class="myradio">Silver</label>
+
+                <input class="memberradio" id="gold" type="radio" name="level" value="gold">
+                <label for="gold" class="myradio">Gold</label>
+
+                <label>Business Description<textarea id="bizdescription" name="description" cols="40" rows="5"></textarea></label>
                 <input type="hidden" id="currentdate" name="currentdate" value="">
                 <input class="mysubmit" type="submit" value="Join the Chamber!">
             </form>
         </section>
-        <div>
+        <div id="memberships">
             <h3>Membership Levels Benefits</h3>
             <h4>NP Membership</h4>
-            <p>For non profit organizations and there is no fee</p>
+            <ul>
+                <li>For non profit organizations and there is no fee</li>
+            </ul>
             <h4>Bronze Membership</h4>
             <ul>
                 <li>15% discount on events</li>
