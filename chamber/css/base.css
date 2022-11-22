@@ -378,9 +378,6 @@ input:checked + label {
 #listview tr:nth-child(odd) {
     background: #f8ffd7;
 }
-#listview tr td a:hover {
-    font-weight: none;
-}
 
 @media screen and (min-width: 40em) {
     #index-main {
