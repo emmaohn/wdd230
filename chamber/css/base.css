@@ -447,14 +447,11 @@ input:checked + label {
 }
 
 @media screen and (min-width: 60em) {
-    /* .hidden {
-        display: block;
-    } */
     #ham {
         display: none;
     }
     .hidden {
-        display: block;
+        display: none;
     }
     nav {
         text-align: center;

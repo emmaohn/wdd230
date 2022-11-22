@@ -17,8 +17,8 @@ function validate(temp, windspeed) {
 
 
 // weatherurl = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}';
-const LAT = '64.8378';
-const LON = '-147.7164';
+const LAT = '40.0832';
+const LON = '74.0682';
 const APIKEY = 'fc4826416b6e323a65f8dbe90ff92aea';
 // const iconid = `http://openweathermap.org/img/wn/${iconid}@2x.png`;
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}`;
