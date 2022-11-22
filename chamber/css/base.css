@@ -141,6 +141,7 @@ nav ul li a::before {
 }
 #hero picture img {
     width: 100%;
+    border-radius: 5px;
 }
 #hero h3 {
     grid-column: 2/10;
@@ -210,7 +211,8 @@ footer div p {
     color: white;
 }
 
-/* DISCOVER PAGE */
+/* DISCOVER */
+
 .discoverimg img {
     display: block;
 }
@@ -219,6 +221,7 @@ footer div p {
     /* font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif; */
     color: #000000;
     margin-bottom: 25px;
+    margin-left: 10px;
 
 }
 #discover-grid picture img {
@@ -439,7 +442,10 @@ input:checked + label {
     /* DIRECTORY */
     #cardview {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    #cardview div {
+        margin: 10px;
     }
 }
 
@@ -516,6 +522,6 @@ input:checked + label {
     }
     #cardview {
         display: grid;
-        grid-template-columns: repeat(1fr, 3);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
