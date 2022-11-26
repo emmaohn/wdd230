@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Pleasant Point Chmber of Commerce!">
+    <title>Pleasant Point Chmaber Contact Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/contact.js"></script>
+</head>
+<body>
+    <div id="meeting-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <header id="header__flex">
+        <div id="header-div">
+            <a href="index.html"><img class="small-logo" src="images/pptreeslight.png" alt="pleasant point logo"></a>
+            <h1>Pleasant Point<br>Chamber of Commerce</h1>
+            <a aria-label="facebook logo" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a aria-label="linkedin logo" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <span id="todays-date"></span>
+            <button id="ham" class="ham"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <nav id="header__nav" class="hidden">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="join-main">
+        <section>
+            <form id="join-form" action="thankyou.html" method="GET">
+                <label class="myinput">Name *<input type="text" name="name" required></label>
+                <label class="myinput">Email *<input type="email" name="email" required></label>
+                <label class="myinput">Cell Phone *<input type="tel" name="cellphone" required></label>
+                <label class="myinput">Business Name<input type="text" name="bizname"></label>
+
+                <label>Let us know how we can help your business!<textarea id="bizmessage" name="message" cols="40" rows="5"></textarea></label>
+                <input type="hidden" id="currentdate" name="currentdate" value="">
+                <input class="mysubmit" type="submit" value="Contact us!">
+            </form>
+        </section>
+        <div id="boarddiv">
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board1.webp" alt="Board Director">
+                <h3>Jeff Goldman</h3>
+            </div>
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board2.webp" alt="Board Director">
+                <h3>Jenny Johnson</h3>
+            </div>
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board3.webp" alt="Board Director">
+                <h3>John Kasey</h3>
+            </div>
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board4.webp" alt="Board Director">
+                <h3>Jeoffrey Yeal</h3>
+            </div>
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board5.webp" alt="Board Director">
+                <h3>Jet Smith</h3>
+            </div>
+            <div class="boardcard">
+                <img class="boardimg" src="images/board/board6.webp" alt="Board Director">
+                <h3>June Westly</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-flex">
+            <img class="small-logo" src="images/pptreeslight.png" alt="Pleasant Point Chamber of Commerce Logo">
+            <p id="address">
+                <b>Pleasant Point Chamber of Commerce</b><br>
+                600 East lakeshore Dr <br>
+                Houghton, MI 12333 <br>
+            </p>
+            <p id="quickref">
+                info@ppcoc.org <br>
+                (600) 650-6780 <br>
+                <a href="#">Location Map</a>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>&copy;<span id="year"></span> Pleasant Point Chamber</p>
+            <p><b>Emma Johnson</b></p>
+            <p>WDD 230 project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

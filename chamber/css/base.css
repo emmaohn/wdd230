@@ -379,6 +379,21 @@ input:checked + label {
     background: #f8ffd7;
 }
 
+/* CONTACT */
+
+#boarddiv {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.boardimg {
+    width: 40%;
+    border-radius: 300px;
+    border: 1px solid #000000;
+}
+.boardcard {
+    text-align: center;
+}
+
 @media screen and (min-width: 40em) {
     #index-main {
         grid-template-columns: 60% 40%;
@@ -443,6 +458,12 @@ input:checked + label {
     }
     #cardview div {
         margin: 10px;
+    }
+
+    /* CONTACT */
+    #boarddiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -515,6 +536,12 @@ input:checked + label {
         margin-top: -25px;
     }
     #cardview {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /* CONTACT */
+    #boarddiv {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
