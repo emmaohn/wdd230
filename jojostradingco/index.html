@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/weather.js"></script>
+    <title>Jojo's Trading co.</title>
+</head>
+<body>
+    <header class=".myheader">
+        <a href="index.html"><img id="corner-logo" src="images/jj.png" alt="jj logo"></a>
+        <nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="hambutton"></i>
+            </a>
+            <ul id="navUl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogspot.html">Blog Spot</a></li>
+                <li><a href="blog1.html">First Blog</a></li>
+                <li><a href="member.html">Become a member</a></li>
+            </ul>
+        </nav>
+        <div id="date-weather-div">
+            <div id="date">
+                <span id="todays-date"></span>
+            </div>
+            <div id="weather">
+                <span class="wetimg"><img src="#" alt="" id="weathericon"></span>
+                <div class="wetdiv">
+                    <p><span id="current-temp"></span>&deg; F</p>
+                    <figcaption></figcaption>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="index-main"> 
+        <img id="main-logo" src="images/jtc.png" alt="logo">
+        <div id="above-grid">
+            <div id="above1">
+                <img src="images/hptn/above1.jpeg" alt="accsessories">
+                <div id="div7" class="white">
+                    <a class="above-link" href="#">
+                        <b>Accessories</b><br>
+                        Add some color, or make it sparkle<br>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div id="div8" class="green"></div>
+            </div>
+            <div id="above2">
+                <img src="images/hptn/above2.jpeg" alt="ollie">
+                <div id="div1" class="white">
+                    <a class="above-link" href="#">
+                        <b>Ollie!</b><br>
+                        Who is he?<br>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div id="div3" class="pink"></div>
+            </div>
+            <div id="above3">
+                <img src="images/hptn/above3.png" alt="nail polish">
+                <div id="div2" class="white">
+                    <a class="above-link" href="#">
+                        <b>Perspective</b><br>
+                        A pebble<br>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div id="div4" class="green"></div>
+            </div>
+            <div id="above4">
+                <img src="images/hptn/above4.jpeg" alt="graduation cap">
+                <div id="div9" class="white">
+                    <a class="above-link" href="#">
+                        <b>Graduation</b><br>
+                        What next?<br>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div id="div5" class="green"></div>
+            </div>
+            <div id="above5">
+                <img src="images/hptn/above5.png" alt="jojo">
+                <div id="div10" class="white">
+                    <a class="above-link" href="#">
+                        <b>Sunshine</b><br>
+                        Spread it!<br>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div id="div6" class="pink"></div>
+            </div>
+        </div>
+        <h3 class="index-h3">Monthly Highlights</h3>
+        <div id="mh-grid">
+            <img id="mh1" class="mh-img" src="images/hptn/mh1.jpeg" alt="outfit 1">
+            <div id="mhdiv1" class="white mh">
+                <a class="mh-link" href="#">
+                    <b>June 6, 2022</b><br>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <img id="mh2" class="mh-img" src="images/hptn/mh2.jpeg" alt="outfit 2">
+            <div id="mhdiv2" class="white mh">
+                <a class="mh-link" href="#">
+                    <b>April 22, 2022</b><br>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <img id="mh3" class="mh-img" src="images/hptn/mh3.jpeg" alt="closet">
+            <div id="mhdiv3" class="white mh">
+                <a class="mh-link" href="#">
+                    <b>My Closet</b><br>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <img id="mh4" class="mh-img" src="images/hptn/mh4.jpeg" alt="outfit 3">
+            <div id="mhdiv4" class="white mh">
+                <a class="mh-link" href="#">
+                    <b>April 28, 2022</b><br>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <img id="mh5" class="mh-img" src="images/hptn/mh5.jpeg" alt="outfit 4">
+            <div id="mhdiv5" class="white mh">
+                <a class="mh-link" href="#">
+                    <b>June 19,2022</b><br>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
+        <div id="nature">
+            <h3 class="index-h3">Commitment To Nature</h3>
+            <img src="images/hptn/nature2.jpeg" alt="nature">
+        
+            <p id="nature-msg">
+                Every year, nearly <a href="https://goodonyou.eco/waste-luxury-fashion/">13 million tons</a>
+                of textile waste is discarded into landfills, and this is only partially 
+                due to commercial retailers. The average citizen of the Earth plays a large 
+                role in the generation of textile waste, and there is something we can do 
+                about it, and if you're here, you'll like the solution! No doubt that ever
+                since you were small, you knew what the thrift store was, or you dreaded 
+                that the only new clothes you would get that year would be from your older 
+                siblings. Well the era of being embarrassed by secondhand clothing is coming 
+                to a close. Not only is shopping for or wearing secondhand clothing minimizing 
+                the impact we have on the Earth, but it is also a cheap ticket to feeling 
+                confident in your second skin: what you wear. The way we dress is much more 
+                important than we may realize (you can read more about this phenomenon 
+                <a href="https://www.nytimes.com/2012/04/03/science/clothes-and-self-perception.html">here</a>).
+                By even just encouraging others to think more about secondhand options, <i>you</i> 
+                can be the beginning of a new era for our Earth and for yourself. Feeling 
+                confident in your own skin (your first, and second ;)) is a priority that we 
+                often push aside because of the events and situations outside of us telling us 
+                that our self-esteem can wait, but it is important to realize that a better 
+                world for all of us begins with the only person that we can truly make choices 
+                for--ourselves.
+            </p>
+        </div>
+        <div id="info-grid">
+            <div id="location">
+                <h3 class="index-h3">Locate a Secondhand Store Near You</h3>
+                <img src="images/hptn/map.jpeg" alt="map">
+            </div>
+            <div id="affiliate">
+                <h3 class="index-h3">Shop Affiliate</h3>
+                <div id="affiliate-flex">
+                    <img class="flex-img" src="images/hptn/clothes1.jpg" alt="clothes 1">
+                    <img class="flex-img" src="images/hptn/clothes2.jpg" alt="clothes 2">
+                    <img class="flex-img" src="images/hptn/clothes3.jpg" alt="clothes 3">
+                    <img class="flex-img" src="images/hptn/clothes4.jpeg" alt="clothes 4">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Jojo's Trading Co. &copy; 2022</h3>
+        <div id="social">
+            <a class="footer-icon" href="https://www.pinterest.com/emmerson803/?invite_code=f02114b7a0404879971499ad95082708&sender=290693488356375540">
+                <i class="fa-brands fa-pinterest-p"></i> 
+            </a>
+            <a class="footer-icon" href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="footer-icon" href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

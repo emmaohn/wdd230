@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="js/main.js"></script>
+    <title>Jojo's Trading co.</title>
+</head>
+<body>
+    <header class=".myheader">
+        <a href="index.html"><img id="corner-logo" src="images/jj.png" alt="jj logo"></a>
+        <nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="hambutton"></i>
+            </a>
+            <ul id="navUl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogspot.html">Blog Spot</a></li>
+                <li><a href="blog1.html">First Blog</a></li>
+                <li><a href="member.html">Become a member</a></li>
+            </ul>
+        </nav>
+        <div>
+            <span id="todays-date"></span>
+            <div id="weather">
+                <span class="wetimg"><img src="#" alt="" id="weathericon"></span>
+                <div class="wetdiv">
+                    <p><span id="current-temp"></span>&deg; F</p>
+                    <figure><figcaption></figcaption></figure>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form id="join-form" action="thankyou.html" method="GET">
+            <!-- {7, } at LEAST seven {7,9} between 7 and 9 -->
+            New member form
+            <label class="myinput">First Name *<input type="text" name="fname" required></label>
+            <label class="myinput">Last Name *<input type="text" name="lname" required></label>
+            <label class="myinput">Email *<input type="email" name="email" required></label>
+            <label class="myinput">Cell Phone *<input type="tel" name="cellphone" required></label>
+
+            Would you like to receive emails and updates about our blog posts and promos?
+            <input type="checkbox" id="mailinglist" name="mailinglist" value="mail">
+            <label for="mailinglist"> I would like to receive email updates</label><br>
+
+            <input type="hidden" id="currentdate" name="currentdate" value="">
+            <input class="mysubmit" type="submit" value="Become a member">
+        </form>
+    </main>
+    <footer>
+        <h3>Jojo's Trading Co. &copy; 2022</h3>
+        <div id="social">
+            <a class="footer-icon" href="https://www.pinterest.com/emmerson803/?invite_code=f02114b7a0404879971499ad95082708&sender=290693488356375540">
+                <i class="fa-brands fa-pinterest-p"></i> 
+            </a>
+            <a class="footer-icon" href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="footer-icon" href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
