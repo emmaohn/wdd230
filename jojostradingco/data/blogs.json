@@ -1,0 +1,26 @@
+{ 
+    "blogs" : [
+    {
+        "title": "Who am I?",
+        "caption": "All about the author of this website",
+        "link": "blog1.hmtl",
+        "img": "images/blog1/blog1bstn.jpeg",
+        "alt": "Ollie and Emma"
+        
+    },
+    {
+        "title": "Ollie!",
+        "caption": "Who is he?",
+        "link": "blog2.html",
+        "img": "images/blog2/blog2bstn.jpg",
+        "alt": "Oliver the dog"
+    },
+    {
+        "title": "Graduation",
+        "caption": "What comes next?",
+        "link": "blog3.hmtl",
+        "img": "images/blog3/blog3bstn.jpg",
+        "alt": "Emma's grad cap"
+    }
+]
+}
