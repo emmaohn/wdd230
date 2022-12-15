@@ -608,14 +608,17 @@ label.mycheck {
 
 @media screen and (min-width: 60em) {
     /* NAV -- LARGE */
-    nav ul {
+    #navUl {
+        display: none;
+    }
+    #flexNavUl {
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
     }
-    nav ul li {
-        display: block;
-    }
+    /* nav ul li {
+        display: flex;
+    } */
     /* .topnav {
         overflow: hidden;
     } */
