@@ -23,7 +23,7 @@ function displayCards(card) {
                 <h1 class="blog-heading">${card.title}</h1>
                 <p class="blog-description">${card.caption}</p>
             </a>
-            <i class="fa-regular fa-heart like"></i>
+            <i class="fa-regular fa-heart like" title="Favorite"></i>
         </div>`;
     cardview.appendChild(blogcard);
 };
