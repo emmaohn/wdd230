@@ -428,7 +428,8 @@ footer .social img{
 }
 .bs-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
 }
 .blog-tn {
     grid-column: 1/2;
@@ -446,6 +447,9 @@ footer .social img{
 }
 #blogspot-main a:hover {
     text-decoration: underline;
+}
+.like {
+    grid-column: 3/4;
 }
 
 /* FIRST BLOG -- SMALL */
