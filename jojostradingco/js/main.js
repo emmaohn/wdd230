@@ -1,14 +1,18 @@
-function myFunction() {
-    var x = document.getElementById("navUl");
-    if (screen.width === "60em") {
+let ham = document.getElementById("hambutton");
+
+ham.addEventListener("click", () => {
+    let x = document.getElementById("navUl");
+    let y = document.getElementById("hambutton");
+    if (y.style.display === "none") {
         x.style.display = "flex";
-        x.style.overflow = "hidden";
-    } else if (x.style.display === "block") {
-        x.style.display = "none";
     } else {
-        x.style.display = "block";
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        } 
     }
-}
+});
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

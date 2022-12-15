@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Satisfy', Arial, Helvetica, sans-serif;
     color: #303036;
 }
-div, p, a, i {
+div, p, a, i, label {
     line-height: 22px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #303036;
@@ -31,13 +31,43 @@ div, p, a, i {
     padding: 10px;
 }
 
+/* HEADER -- GENERAL */
+header {
+    background-color: #efead2;
+    display: grid;
+    grid-template-columns: 150px auto;
+    font-size: 1.1em;
+}
+
+/* NAV -- SMALL */
+nav ul {
+    display: none;
+    margin-top: 45px;
+    margin-right: 12px;
+    /* margin-bottom: 90px; */
+}
+nav ul li {
+    list-style-type: none;
+    text-align: right;
+}
+nav ul li a:hover {
+    color: #acc178;
+}
+#hambutton {
+    display: block;
+    float: right;
+    padding: 12px;
+}
+
 /* DATE AND WEATHER */
 #date-weather-div {
+    background-color: #efead2;
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    max-height: 25px;
+    margin-top: -10px;
+    padding: 0px 15px 10px 15px;
 }
 #date {
     width: 90%;
@@ -45,9 +75,10 @@ div, p, a, i {
     border-radius: 15px;
     padding: 3px;
     text-align: center;
+    max-height: 50px;
 }
 .wetimg {
-    width: 70%;
+    width: 50px;
 }
 #weather {
     width: 90%;
@@ -56,6 +87,8 @@ div, p, a, i {
     grid-column: 2/3;
     background-color: #fffdf4;
     border-radius: 15px;
+    max-height: 50px;
+    margin: auto;
 }
 .wetdiv {
     grid-column: 2/3;
@@ -63,30 +96,12 @@ div, p, a, i {
 .wetdiv p {
     margin: 0;
 }
-/* #weather {
-    min-width: 250px;
-    justify-content: center;
-    background-color: #fffdf4;
-    border-radius: 15px;
-    padding-bottom: 1px;
-    margin: 0px auto 5px auto;
-} */
-/* .wetdiv {
-    display: inline;
-    text-align: left;
-    line-height: 0px;
-} */
-/* .wetimg {
-    width: 20%;
-    float: left;
-    padding: -10px;
-} */
 
 /* LOGOS */
 #main-logo {
     width: 50%;
     display: block;
-    margin: auto auto;
+    margin: auto;
     padding: 25px;
 }
 #corner-logo {
@@ -100,31 +115,6 @@ div, p, a, i {
 .icon {
     color: #303036;
     z-index: 5;
-}
-
-/* HEADER -- GENERAL */
-header {
-    background-color: #efead2;
-    display: grid;
-    grid-template-columns: 150px auto;
-    font-size: 1.1em;
-}
-
-/* NAV -- SMALL */
-nav ul {
-    margin-top: 50px;
-    margin-right: 12px;
-}
-nav ul li {
-    list-style-type: none;
-    text-align: right;
-}
-nav ul li a:hover {
-    color: #acc178;
-}
-#hambutton {
-    float: right;
-    padding: 12px;
 }
 
 /* FOOTER -- GENERAL */
@@ -176,6 +166,9 @@ footer .social img{
     margin: 30px;
     margin-right: 40px;
 }
+/* #above-link {
+
+} */
 #above1 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -289,6 +282,118 @@ footer .social img{
         z-index: 1;
     }
 
+/* MH -- SMALL/MED */
+#mh-grid {
+    display: grid;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 20px;
+    border: none;
+}
+.mh-img {
+    width: 80%;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+    margin: 20px;
+    /* margin-top: -100px; */
+}
+#mhdiv1, #mhdiv2, #mhdiv3, #mhdiv4, #mhdiv5 {
+    display: block;
+    max-height: 50px;
+    margin-top: 20px;
+}
+.mh-link {
+    text-decoration: none;
+}
+.mh-link:hover {
+    text-decoration: underline;
+}
+#mhdiv1, #mhdiv3, #mhdiv5 {
+    box-shadow: 10px -10px #efead2;
+    margin-left: 10px;
+    margin-right: -8px;
+}
+#mhdiv2, #mhdiv4 {
+    box-shadow: -10px 10px #efead2;
+    margin-left: 10px;
+    margin-right: -8px;
+}
+#mh1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+    #mhdiv1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+#mh2 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+    #mhdiv2 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+#mh3 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+    #mhdiv3 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+#mh4 {
+    grid-column: 3/5;
+    grid-row: 4/6;
+}
+    #mhdiv4 {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+#mh5 {
+    grid-column: 1/3;
+    grid-row: 5/7;
+}
+    #mhdiv5 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+/* NATURE -- ALL */
+#nature {
+    text-align: center;
+    margin: 50px;
+}
+    #nature img {
+        border: 10px solid #acc178;
+        border-radius: 15px;
+        max-width: 300px;
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+/* INFO/LOC -- ALL */
+#info-grid {
+    justify-items: center;
+    align-items: initial;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#location {
+    text-align: center;
+}
+    #location img {
+        width: 70%;
+        border: 10px solid #ffbcd9;
+        border-radius: 15px;
+    }
+
 /* AFF -- ALL */
 #affiliate {
     grid-column: 2/3;
@@ -322,6 +427,88 @@ footer .social img{
 .blog-heading, .blog-description {
     grid-column: 2/3;
     grid-row: 1/2;
+}
+
+/* BLOG SPOT -- GENERAL */
+.pink {
+    margin: 15px;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+}
+.green {
+    margin: 15px;
+    border: 10px solid #acc178;
+    border-radius: 15px;
+}
+#blogspot-main h1, #blogspot-main p {
+    margin-left: 50px;
+}
+#blogspot-main a {
+    text-decoration: none;
+}
+#blogspot-main a:hover {
+    text-decoration: underline;
+}
+
+/* FIRST BLOG -- SMALL */
+#blog1-content {
+    margin: 20px;
+}
+#em-ollie {
+    /* float: none; */
+    width: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+}
+#peak-fashion {
+    /* float: none; */
+    width: 40%;
+    margin-left: 28%;
+    margin-right: 28%;
+    border: 10px solid #acc178;
+    border-radius: 15px;
+}
+#modern-fashion {
+    /* float: none; */
+    width: 95%;
+    margin: 0 auto;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+}
+
+/* MEMBERSHIP -- SMALL/BASE */
+form {
+    margin: 15px;
+}
+form p {
+    font-family: 'Satisfy', Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+}
+label.myinput input, label.myinput textarea {
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+label.mycheck {
+    display: block;
+}
+.mysubmit {
+    background-color: #acc178;
+    border: none;
+    border-radius: 10px;
+    color: #fffdf4;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 40em) {
@@ -367,89 +554,51 @@ footer .social img{
         font-size: 1em;
     }
 
-    /* MH -- MED */
-    #mh-grid {
+    /* NATURE -- MED/LARGE */
+    #nature img {
+        float: left;
+    }
+    #nature-msg {
+        text-align: left;
+    }
+
+    /* INFO/LOC -- MED/LARGE */
+    #info-grid {
         display: grid;
-        border: 10px solid #ffbcd9;
-        border-radius: 15px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        margin: 20px;
-        border: none;
+        grid-template-columns: 1fr 1fr;
     }
-    .mh-img {
-        width: 80%;
-        border: 10px solid #ffbcd9;
-        border-radius: 15px;
-        margin: 20px;
-        /* margin-top: -100px; */
+    #location {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-    #mhdiv1, #mhdiv2, #mhdiv3, #mhdiv4, #mhdiv5 {
-        display: block;
-        max-height: 50px;
-        margin-top: 20px;
+
+    /* FIRST BLOG -- MED/LARGE */
+    #em-ollie {
+        float: left;
+        margin: 10px;
+        margin-right: 15px;
     }
-    .mh-link {
-        text-decoration: none;
+    #peak-fashion {
+        float: right;
+        margin: 10px;
+        margin-left: 15px;
     }
-    .mh-link:hover {
-        text-decoration: underline;
+    #modern-fashion {
+        float: inherit;
     }
-    #mhdiv1, #mhdiv3, #mhdiv5 {
-        box-shadow: 10px -10px #efead2;
-        margin-left: 10px;
-        margin-right: -8px;
+    #blog1-content {
+        margin: 50px;
     }
-    #mhdiv2, #mhdiv4 {
-        box-shadow: -10px 10px #efead2;
-        margin-left: 10px;
-        margin-right: -8px;
+
+    /* MEMBERSHIP -- SMALL/BASE */
+    .mysubmit:hover {
+        box-shadow: 10px 10px #efead2;
     }
-    #mh1 {
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-        #mhdiv1 {
-            grid-column: 2/3;
-            grid-row: 2/3;
-        }
-    #mh2 {
-        grid-column: 3/5;
-        grid-row: 2/4;
-    }
-        #mhdiv2 {
-            grid-column: 3/4;
-            grid-row: 3/4;
-        }
-    #mh3 {
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-        #mhdiv3 {
-            grid-column: 2/3;
-            grid-row: 4/5;
-        }
-    #mh4 {
-        grid-column: 3/5;
-        grid-row: 4/6;
-    }
-        #mhdiv4 {
-            grid-column: 3/4;
-            grid-row: 5/6;
-        }
-    #mh5 {
-        grid-column: 1/3;
-        grid-row: 5/7;
-    }
-        #mhdiv5 {
-            grid-column: 2/3;
-            grid-row: 6/7;
-        }
 }
 
 @media screen and (min-width: 60em) {
     /* NAV -- LARGE */
-    #navUl {
+    nav ul {
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
@@ -613,6 +762,8 @@ footer .social img{
         margin: 20px;
     }
     #mh1, #mh2, #mh3, #mh4, #mh5 {
+        margin: 0;
+        width: 100%;
         border: none;
         border-radius: 0px;
     }
@@ -676,45 +827,4 @@ footer .social img{
         font-size: .7em;
         text-decoration: underline;
     }
-
-    /* NATURE -- LARGE */
-    #nature {
-        text-align: center;
-        margin: 50px;
-    }
-        #nature img {
-            border: 10px solid #acc178;
-            border-radius: 15px;
-            max-width: 300px;
-            width: 80%;
-            float: left;
-            margin-left: 20px;
-            margin-right: 15px;
-            margin-bottom: 10px;
-        }
-    #nature-msg {
-    text-align: left;
-    }
-
-    /* INFO/LOC -- LARGE */
-    #info-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: initial;
-        justify-content: center;
-        width: 95%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-    #location {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        text-align: center;
-    }
-        #location img {
-            border: 10px solid #ffbcd9;
-            border-radius: 15px;
-            max-width: 250px;
-        }
 }

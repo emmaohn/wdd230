@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script defer src="js/main.js"></script>
-    <script defer src="js/weather.js"></script>
+    <!-- <script defer src="js/weather.js"></script> -->
     <title>Jojo's Trading co.</title>
 </head>
 <body>
     <header class=".myheader">
         <a href="index.html"><img id="corner-logo" src="images/jj.png" alt="jj logo"></a>
         <nav>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon">
                 <i class="fa fa-bars" id="hambutton"></i>
             </a>
             <ul id="navUl">
@@ -26,6 +26,8 @@
                 <li><a href="member.html">Become a member</a></li>
             </ul>
         </nav>
+    </header>
+    <main id="index-main"> 
         <div id="date-weather-div">
             <div id="date">
                 <span id="todays-date"></span>
@@ -33,20 +35,18 @@
             <div id="weather">
                 <span class="wetimg"><img src="#" alt="" id="weathericon"></span>
                 <div class="wetdiv">
-                    <p><span id="current-temp"></span>&deg; F</p>
+                    <span id="current-temp"></span>&deg; F
                     <figcaption></figcaption>
                 </div>
             </div>
         </div>
-    </header>
-    <main id="index-main"> 
         <img id="main-logo" src="images/jtc.png" alt="logo">
         <div id="above-grid">
             <div id="above1">
                 <img src="images/hptn/above1.jpeg" alt="accsessories">
                 <div id="div7" class="white">
                     <a class="above-link" href="#">
-                        <b>Accessories</b><br>
+                        <strong>Accessories</strong><br>
                         Add some color, or make it sparkle<br>
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
