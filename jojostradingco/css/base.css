@@ -416,6 +416,16 @@ footer .social img{
 }
 
 /* BLOG SPOT -- GENERAL */
+.pink {
+    margin: 15px;
+    border: 10px solid #ffbcd9;
+    border-radius: 15px;
+}
+.green {
+    margin: 15px;
+    border: 10px solid #acc178;
+    border-radius: 15px;
+}
 .bs-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -427,18 +437,6 @@ footer .social img{
 .blog-heading, .blog-description {
     grid-column: 2/3;
     grid-row: 1/2;
-}
-
-/* BLOG SPOT -- GENERAL */
-.pink {
-    margin: 15px;
-    border: 10px solid #ffbcd9;
-    border-radius: 15px;
-}
-.green {
-    margin: 15px;
-    border: 10px solid #acc178;
-    border-radius: 15px;
 }
 #blogspot-main h1, #blogspot-main p {
     margin-left: 50px;
@@ -510,6 +508,18 @@ label.mycheck {
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* THANK YOU -- ALL */
+#thankyou {
+    text-align: center;
+    margin-top: 17em;
+    margin-bottom: 17em;
+}
+#thankyou h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
 
 @media screen and (min-width: 40em) {
     /* ABOVE --  MED */
